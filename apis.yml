@@ -1,7 +1,26 @@
 aid: csr-biotech
-name: csr-biotech
-description: csr-biotech is a company surfaced as a portfolio company of qiming and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/csr-biotech.png
+name: CSR Biotech
+description: CSR Biotech (超视计 / Chaoshiji) is a Chinese life-sciences instrumentation
+  company that develops super-resolution optical microscopy systems for advanced biological
+  research. Its product line includes the HIS-SIM and MI-SIM structured-illumination
+  microscopes and the SIM-Ultimate platform, delivering live-cell imaging down to roughly
+  60nm resolution across many imaging modes. The company was surfaced as a portfolio
+  company of Qiming Venture Partners and added to the API Evangelist network as a stub.
+  As a scientific-instruments maker, CSR Biotech publishes no public developer portal,
+  documentation, or API surface at this time; this profile captures its identity and
+  domain-security posture.
 url: https://raw.githubusercontent.com/api-evangelist/csr-biotech/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +30,14 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Microscopy
+- Super-Resolution Imaging
+- Life Sciences
+- Scientific Instruments
+- Biotechnology
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +45,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/csr-biotech-domain-security.yml
 - type: Website
   url: https://csr-biotech.com
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
